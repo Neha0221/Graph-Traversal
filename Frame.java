@@ -30,7 +30,7 @@ public class Frame extends JPanel
 	Node startNode, endNode;
 	String mode;
 	HashMap<String, Strategy> algoHashMap;
-private String algo[] = { "A*","DFS" };
+private String algo[] = { "A*","DFS","BFS"};
 
 	Timer timer = new Timer(100, this);
 	int r = randomWithRange(0, 255);
@@ -59,6 +59,7 @@ private String algo[] = { "A*","DFS" };
 		algoHashMap = new HashMap<>();
 		algoHashMap.put("A*", new APathfinding(this, size));
         algoHashMap.put("DFS", new DFSPathfinding(this, size));
+        algoHashMap.put("BFS", new BFSPathfinding(this, size));
 		
 
 		pathfinding = algoHashMap.get(algo[0]);
