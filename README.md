@@ -5,3 +5,6 @@
 # Graph Traversal Visualizer Video
 https://github.com/Neha0221/Graph-Traversal/assets/121671988/5dda13c1-c273-4f4d-9d77-f6f40e5e8329
 
+# Future Task
+1) Integrate heuristic pathfinding algorithm
+2) Improve efficiency of Application
